@@ -28,5 +28,22 @@ services:
     volumes:
       - monorepo-starter-pgdata:/var/lib/postgresql/data
 
+  backend-extended:
+    build:
+      context: ./apps/backend_extended
+      dockerfile: Dockerfile
+    container_name: monorepo-starter-backend-extended
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_DATASOURCE_URL: jdbc:postgresql://database-postgres:5432/monorepo-starter
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+    depends_on:
+      - database-postgres
+    networks:
+      - default
+
 volumes:
   monorepo-starter-pgdata:

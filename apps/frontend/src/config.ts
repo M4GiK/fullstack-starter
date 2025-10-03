@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 const appConfig = {
-  backendUrl: import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000',
+  backendUrl: import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001',
 };
 
 const configSchema = z.object({

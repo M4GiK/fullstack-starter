@@ -1,0 +1,47 @@
+# Build artifacts
+target/
+*.jar
+*.war
+*.class
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tools directory
+tools/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+*.md
+
+# Scripts
+start-backend-extended.sh
+start-backend-extended.bat
+start-backend-extended-docker.sh
+start-backend-extended-docker.bat
+
+# Maven wrapper (we use the one in the image)
+.mvn/
+mvnw
+mvnw.cmd
+
+# Test files
+src/test/
+
+# Logs
+*.log
+logs/

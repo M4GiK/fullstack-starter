@@ -16,3 +16,6 @@ dist
 .tsbuildinfo
 
 .turbo
+
+# Local development tools (auto-downloaded)
+tools/

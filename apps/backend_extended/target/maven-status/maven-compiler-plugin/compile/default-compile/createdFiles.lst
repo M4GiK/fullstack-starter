@@ -1,0 +1,10 @@
+com/example/backendextended/service/UserService.class
+com/example/backendextended/entity/User.class
+com/example/backendextended/controller/HealthController.class
+com/example/backendextended/dto/UserDto.class
+com/example/backendextended/repository/UserRepository.class
+com/example/backendextended/entity/BlacklistedToken.class
+com/example/backendextended/BackendExtendedApplication.class
+com/example/backendextended/config/SecurityConfig.class
+com/example/backendextended/dto/RegisterRequest.class
+com/example/backendextended/controller/UserController.class

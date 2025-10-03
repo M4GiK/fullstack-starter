@@ -1,0 +1,10 @@
+/Volumes/Workspace/HackYeah2025/fullstack-starter/apps/backend_extended/src/main/java/com/example/backendextended/BackendExtendedApplication.java
+/Volumes/Workspace/HackYeah2025/fullstack-starter/apps/backend_extended/src/main/java/com/example/backendextended/config/SecurityConfig.java
+/Volumes/Workspace/HackYeah2025/fullstack-starter/apps/backend_extended/src/main/java/com/example/backendextended/controller/HealthController.java
+/Volumes/Workspace/HackYeah2025/fullstack-starter/apps/backend_extended/src/main/java/com/example/backendextended/controller/UserController.java
+/Volumes/Workspace/HackYeah2025/fullstack-starter/apps/backend_extended/src/main/java/com/example/backendextended/dto/RegisterRequest.java
+/Volumes/Workspace/HackYeah2025/fullstack-starter/apps/backend_extended/src/main/java/com/example/backendextended/dto/UserDto.java
+/Volumes/Workspace/HackYeah2025/fullstack-starter/apps/backend_extended/src/main/java/com/example/backendextended/entity/BlacklistedToken.java
+/Volumes/Workspace/HackYeah2025/fullstack-starter/apps/backend_extended/src/main/java/com/example/backendextended/entity/User.java
+/Volumes/Workspace/HackYeah2025/fullstack-starter/apps/backend_extended/src/main/java/com/example/backendextended/repository/UserRepository.java
+/Volumes/Workspace/HackYeah2025/fullstack-starter/apps/backend_extended/src/main/java/com/example/backendextended/service/UserService.java

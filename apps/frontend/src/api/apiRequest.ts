@@ -98,3 +98,45 @@ export const apiRequest = async <T>(endpoint: string, options: ApiRequestConfig)
 
   return responseData;
 };
+
+// Extended API request for backend-extended (Java/Spring)
+export const apiRequestExtended = async <T>(endpoint: string, options: ApiRequestConfig): Promise<T> => {
+  const { method, body, params } = options;
+
+  // Use backend-extended URL (localhost:8081)
+  const backendExtendedUrl = 'http://localhost:8081';
+  const url = params ? `${backendExtendedUrl}${endpoint}?${params}` : `${backendExtendedUrl}${endpoint}`;
+
+  const makeRequest = async (): Promise<Response> => {
+    const headers: Record<string, string> = {};
+
+    const requestConfig: RequestInit = {
+      method,
+      headers,
+      credentials: 'include',
+    };
+
+    if (body) {
+      if (body instanceof FormData) {
+        requestConfig.body = body;
+      } else {
+        requestConfig.body = JSON.stringify(body);
+        headers['Content-Type'] = 'application/json';
+      }
+    }
+
+    return fetch(url, requestConfig);
+  };
+
+  const response = await makeRequest();
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  }
+
+  if (response.status === 204) {
+    return null as unknown as T;
+  }
+
+  return response.json();
+};
